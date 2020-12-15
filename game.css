@@ -1,13 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap');
+
+
+/* Ressources des images
+https://www.flaticon.com/packs/music-store-49?word=musical%20instrument
+*/
+
 #memorie_rock {
     display:grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 400px;
+    margin: 5vh 0;
 }
 
-.case {
-    border:1px solid black;
-    color: black;
-    background-color: aquamarine;
-    padding: 1rem;
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 6vw;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 2vw;
+}
+
+
+div.case {
+    border:3px solid white;
+    padding: 3rem ;
+    background-position: center;
+    background-size: 50%;
+    background-color: rgb(231, 231, 231);
+    transition: border .3s ease-in-out;
+}
+
+.case:hover {
+    border-color: #E85D04;
+    cursor: grab;
+}
+
+.box1 {
+    background:url('img/case_1-guitar.svg') no-repeat;
+}
+
+.box2 {
+    background:url('img/case_2-harp.svg') no-repeat;
+}
+
+.box3 {
+    background:url('img/case_3-microphone.svg') no-repeat;
+}
+
+.box4 {
+    background:url('img/case_4-xylo.svg') no-repeat;
+}
+
+.box5 {
+    background:url('img/case_5-drum.svg') no-repeat;
+}
+
+.box6 {
+    background:url('img/case_6-violon.svg') no-repeat;
+}
+
+.box7 {
+    background:url('img/case_7-saxo.svg') no-repeat;
+}
+
+.box8 {
+    background:url('img/case_8-horn.svg') no-repeat;
+}
+.box9 {
+    background:url('img/case_9-maraca.svg') no-repeat;
 }
 
