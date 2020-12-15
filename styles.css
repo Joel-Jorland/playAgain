@@ -17,3 +17,47 @@
 .nav_svg{
     height:10vh;
 }
+
+ul li {
+  list-style: none; 
+}
+
+#team {
+  text-align: center;
+  font-family: 'Indie Flower';
+  font-size: 80px;
+  margin: 0px;
+  color: #DC2F02; 
+}
+
+.prenom {
+  font-family: 'Indie Flower';
+  font-size: 40px;
+  color: #370617;
+  margin: 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 0.7rem;
+}
+
+.Presentation-personne {
+  text-align: center;
+  background:rgb(167, 150, 150);
+  border-radius: 20px;
+}
+
+.potato {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width:640px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
