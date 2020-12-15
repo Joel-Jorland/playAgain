@@ -1,0 +1,12 @@
+#memorie_rock {
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+}
+
+.case {
+    border:1px solid black;
+    color: black;
+    background-color: aquamarine;
+    padding: 1rem;
+}
