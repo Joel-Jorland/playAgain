@@ -1,13 +1,50 @@
 
 /*css fond d'écran*/
-body {
-    background-color: radial-gradient(03071E, 370617, 6A040F, 9D0208, D00000, DC2F02, E85D04, F48C06);
+body{
+    background: radial-gradient(#03071E 70%, #370617, #6A040F, #9D0208, #D00000, #DC2F02, #E85D04, #F48C06);
+    font-family: 'Indie Flower', cursive;
 }
+
 /* style pour les titres*/
 h1 {
+    
+    font-size: 80px;
+    color:#FFBA08;
+    text-shadow: 5px 5px 3px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
+    text-align: center;
+}
+
+/*style de paragraphe*/
+p {
+    font-size: 40px;
+    color:#FFBA08;
+    text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
+    text-align: center;
+}
+
+/*mise en page img page tuto*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    height: 300px;
+    width:500px;
+    padding-bottom: 100px;
+}
+
+/*design du boutton start page tuto*/
+button{
     font-family: 'Indie Flower', cursive;
-    color:FFBA08;
-    text-shadow: 1px 1px 2px E85D04, 0 0 1em 9D0208, 0 0 0.2em 370617;
+    display: block;
+    background-color: #FFBA08;
+    border-radius:20px;
+    border: 10px outset #D00000;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right:auto;
+}
+audio{
+    display: none;
 }
 
 .navbar {
