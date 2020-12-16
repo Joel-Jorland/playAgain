@@ -55,10 +55,16 @@ table {
 body{
     background: radial-gradient(#03071E 70%, #370617, #6A040F, #9D0208, #D00000, #DC2F02, #E85D04, #F48C06);
     font-family: 'Indie Flower', cursive;
+    background: #F48C06; /* fallback for old browsers /
+  background: -webkit-linear-gradient(to bottom, #9D0208, #F48C06); / Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #9D0208, #F48C06); 
+  background-attachment: fixed;
+  height:100vh;
 }
 main{
     padding-bottom: 10vh;
 }
+
 
 /* style pour les titres*/
 h1 {
@@ -68,6 +74,18 @@ h1 {
     text-shadow: 5px 5px 3px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
     text-align: center;
     padding: 50px;
+    font-family: 'Indie Flower', cursive;
+}
+
+h2, h3{
+  font-size: 30px;
+    color: white;
+    text-shadow: 5px 5px 3px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+}
+h3 {
+  font-size: 20px;
 }
 
 /*style de paragraphe*/
@@ -77,6 +95,7 @@ p {
     text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
     text-align: center;
     padding: 20px;
+    font-family: 'Indie Flower', cursive;
 }
 
 /*mise en page img page tuto*/
@@ -206,3 +225,76 @@ ul li {
 .nav_svg {
     height:10vh;
 }
+
+/* game.css */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap');
+
+
+/* Ressources des images
+https://www.flaticon.com/packs/music-store-49?word=musical%20instrument
+*/
+
+#memorie_rock {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 400px;
+    margin: 5vh 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 2vw;
+}
+
+div.case {
+    border:3px solid white;
+    padding: 3rem ;
+    background-position: center;
+    background-size: 50%;
+    background-color: rgb(231, 231, 231);
+    transition: border .3s ease-in-out;
+}
+
+.case:hover {
+    border-color: #E85D04;
+    cursor: grab;
+}
+
+.box1 {
+    background:url('img/case_1-guitar.svg') no-repeat;
+}
+
+.box2 {
+    background:url('img/case_2-harp.svg') no-repeat;
+}
+
+.box3 {
+    background:url('img/case_3-microphone.svg') no-repeat;
+}
+
+.box4 {
+    background:url('img/case_4-xylo.svg') no-repeat;
+}
+
+.box5 {
+    background:url('img/case_5-drum.svg') no-repeat;
+}
+
+.box6 {
+    background:url('img/case_6-violon.svg') no-repeat;
+}
+
+.box7 {
+    background:url('img/case_7-saxo.svg') no-repeat;
+}
+
+.box8 {
+    background:url('img/case_8-horn.svg') no-repeat;
+}
+.box9 {
+    background:url('img/case_9-maraca.svg') no-repeat;
+}
+
+
+
