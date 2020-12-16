@@ -18,6 +18,8 @@
     height:10vh;
 }
 
+/* style pour page équipe */
+
 ul li {
   list-style: none; 
 }
@@ -30,6 +32,7 @@ ul li {
   color: #DC2F02; 
 }
 
+/*style Grid page équipe*/
 .prenom {
   font-family: 'Indie Flower';
   font-size: 40px;
@@ -49,12 +52,14 @@ ul li {
   border-radius: 20px;
 }
 
+/* Style images équipe */
 .potato {
   width: 300px;
   height: 200px;
   border-radius: 20px;
 }
 
+/* Style responsive équipe */
 @media only screen and (max-width:640px){
   .container{
     grid-template-columns: 1fr;
