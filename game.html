@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="game.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="game.css" />
     <title>Jeux sauve le Rock</title>
-</head>
-<body>
-<main>
-    <h1>SAUVE LE ROCK!!!!</h1>
-    <h2>Mission 1 : Découvre les instruments du rock.</h2>
+  </head>
+  <body>
+    <main>
+      <h1>SAUVE LE ROCK!!!!</h1>
+      <h2>Mission 1 : Découvre les instruments du rock.</h2>
 
-    <h3>Soit attentif en écoutant le son qui va suivre</h3>
+      <h3>Soit attentif en écoutant le son qui va suivre</h3>
 
       <audio controls="">
-        
-        <source src="sound/basement-drum-break_140bpm.ogg" type="audio/ogg; codecs=vorbis"/>
-       Your browser does not support the audio element.
+        <source
+          src="sound/basement-drum-break_140bpm.ogg"
+          type="audio/ogg; codecs=vorbis"
+        />
+        Your browser does not support the audio element.
       </audio>
 
-
-    
-
-    
-
-
-
-<div id="memorie_rock">
+      <div id="memorie_rock">
         <div class="case box1"></div>
         <div class="case box2"></div>
         <div class="case box3"></div>
@@ -37,16 +32,43 @@
         <div class="case box7"></div>
         <div class="case box8"></div>
         <div class="case box9"></div>
-    </div>    
-    
-
-</main>
-<nav class=navbar>
-    <div class=navbar_element><a href="index.html"><img class='nav_svg' src="svg/house.svg" alt=""></a></div>
-    <div class=navbar_element><a href="game.html"><img class='nav_svg' src="svg/gamepad.svg" alt=""></a></div>
-    <div class=navbar_element><a href="#"><img class='nav_svg' src="svg/help.svg" alt=""></a></div>
-  </nav>
-
-
-</body>
+      </div>
+    </main>
+    <nav class="navbar">
+      <ul id="navbar_list" class="nav_display_none">
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="tuto.html">Tutoriel</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="gallery">Gallerie</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="team.html">Equipe</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="about.html">À propos</a>
+        </li>
+      </ul>
+      <div class="nav_main">
+        <div class="navbar_element">
+          <a href="index.html"
+            ><img class="nav_svg" src="svg/house.svg" alt="house"
+          /></a>
+        </div>
+        <div class="navbar_element">
+          <a href="game.html"
+            ><img class="nav_svg" src="svg/gamepad.svg" alt="gamepad"
+          /></a>
+        </div>
+        <div
+          class="navbar_element"
+          id="navbar_element_help"
+          onclick="openCloseMenu()"
+        >
+          <img class="nav_svg" src="svg/help.svg" alt="help" />
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script src="navbar.js"></script>
 </html>

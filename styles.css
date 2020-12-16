@@ -1,157 +1,241 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* end of reset styles CSS */
 
-
-
 /*css fond d'écran*/
-body{
-    background: radial-gradient(#03071E 70%, #370617, #6A040F, #9D0208, #D00000, #DC2F02, #E85D04, #F48C06);
-    font-family: 'Indie Flower', cursive;
+body {
+  background: radial-gradient(
+    #03071e 70%,
+    #370617,
+    #6a040f,
+    #9d0208,
+    #d00000,
+    #dc2f02,
+    #e85d04,
+    #f48c06
+  );
+  font-family: "Indie Flower", cursive;
 }
-main{
-    padding-bottom: 12vh;
+main {
+  padding-bottom: 14vh;
 }
 
 /* style pour les titres*/
 h1 {
-    
-    font-size: 80px;
-    color:#FFBA08;
-    text-shadow: 5px 5px 3px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
-    text-align: center;
+  font-size: 80px;
+  color: #ffba08;
+  text-shadow: 5px 5px 3px #e85d04, 0 0 1em #9d0208, 0 0 0.2em #370617;
+  text-align: center;
 }
 
 /*style de paragraphe*/
 p {
-    font-size: 40px;
-    color:#FFBA08;
-    text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
-    text-align: center;
+  font-size: 40px;
+  color: #ffba08;
+  text-shadow: 1px 1px 2px #e85d04, 0 0 1em #9d0208, 0 0 0.2em #370617;
+  text-align: center;
 }
 
 /*mise en page img page tuto*/
-.marioTest{
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    height: 300px;
-    width:500px;
-    padding-bottom: 100px;
+.marioTest {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 500px;
+  padding-bottom: 100px;
 }
 
 /*design du boutton start page tuto*/
-button{
-    font-family: 'Indie Flower', cursive;
-    display: block;
-    background-color: #FFBA08;
-    border-radius:20px;
-    border: 10px outset #D00000;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right:auto;
+button {
+  font-family: "Indie Flower", cursive;
+  display: block;
+  background-color: #ffba08;
+  border-radius: 20px;
+  border: 10px outset #d00000;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
-audio{
-    display: none;
+audio {
+  display: none;
 }
 
 /* styles for Gallery */
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.inGallery{
-    margin: 10px;
+.inGallery {
+  margin: 10px;
 }
-.imageGallery{
-    width:100%;
-    height: auto;
+.imageGallery {
+  width: 100%;
+  height: auto;
 }
 
 /* Gallery for mobile */
-@media screen and (max-width:640px){
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width:100vw;
-        flex-flow: ;
-        
-    }  
-    .inGallery{
-        width:80vw;
-    }
-    .imageGallery{
-          height: auto;
-    } 
+@media screen and (max-width: 640px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    flex-flow: ;
+  }
+  .inGallery {
+    width: 80vw;
+  }
+  .imageGallery {
+    height: auto;
+  }
 }
 
 /* style pour page équipe */
 
 ul li {
-  list-style: none; 
+  list-style: none;
 }
 
 #team {
   text-align: center;
-  font-family: 'Indie Flower';
+  font-family: "Indie Flower";
   font-size: 80px;
   margin: 0px;
-  color: #DC2F02; 
+  color: #dc2f02;
 }
 
 /*style Grid page équipe*/
 .prenom {
-  font-family: 'Indie Flower';
+  font-family: "Indie Flower";
   font-size: 40px;
   color: #370617;
   margin: 2px;
@@ -159,13 +243,13 @@ ul li {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 
 .Presentation-personne {
   text-align: center;
-  background:rgb(167, 150, 150);
+  background: rgb(167, 150, 150);
   border-radius: 20px;
 }
 
@@ -177,8 +261,8 @@ ul li {
 }
 
 /* Style responsive équipe */
-@media only screen and (max-width:640px){
-  .container{
+@media only screen and (max-width: 640px) {
+  .container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
   }
@@ -186,23 +270,48 @@ ul li {
 
 /* navbar */
 .navbar {
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:12vh;
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items:center;
-    border: 1px solid rgb(151, 151, 151);
-    box-shadow: 0 0 5px rgb(151, 151, 151);
-    background-color:#F48C06;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid rgb(151, 151, 151);
+  box-shadow: 0 0 5px rgb(151, 151, 151);
+  background-color: #f48c06;
 }
+.nav_main {
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
 .navbar_element {
-    margin: 10px;
+  margin: 10px;
+}
+#navbar_element_help:hover {
+  cursor: pointer;
 }
 .nav_svg {
-    height:10vh;
+  height: 10vh;
+}
+#navbar_list {
+  height: 270px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+.navbar_list_element {
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+.navbar_list_link:link,
+.navbar_list_link:visited {
+  color: #03071e;
+}
+
+.nav_display_none {
+  height: 0 !important;
 }
