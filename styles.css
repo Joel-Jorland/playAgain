@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,6 +134,56 @@ audio{
           height: auto;
     } 
 }
+
+/* style pour page équipe */
+
+ul li {
+  list-style: none; 
+}
+
+#team {
+  text-align: center;
+  font-family: 'Indie Flower';
+  font-size: 80px;
+  margin: 0px;
+  color: #DC2F02; 
+}
+
+/*style Grid page équipe*/
+.prenom {
+  font-family: 'Indie Flower';
+  font-size: 40px;
+  color: #370617;
+  margin: 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2rem;
+}
+
+.Presentation-personne {
+  text-align: center;
+  background:rgb(167, 150, 150);
+  border-radius: 20px;
+}
+
+/* Style images équipe */
+.potato {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+/* Style responsive équipe */
+@media only screen and (max-width:640px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
 /* navbar */
 .navbar {
     position:fixed;
@@ -155,5 +206,3 @@ audio{
 .nav_svg {
     height:10vh;
 }
-
-
