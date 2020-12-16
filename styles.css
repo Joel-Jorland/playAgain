@@ -57,24 +57,26 @@ body{
     font-family: 'Indie Flower', cursive;
 }
 main{
-    padding-bottom: 12vh;
+    padding-bottom: 10vh;
 }
 
 /* style pour les titres*/
 h1 {
     
-    font-size: 80px;
+    font-size: 60px;
     color:#FFBA08;
     text-shadow: 5px 5px 3px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
     text-align: center;
+    padding: 50px;
 }
 
 /*style de paragraphe*/
 p {
-    font-size: 40px;
-    color:#FFBA08;
+    font-size: 30px;
+    color:white;
     text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
     text-align: center;
+    padding: 20px;
 }
 
 /*mise en page img page tuto*/
@@ -82,9 +84,9 @@ p {
     display: block;
     margin-left: auto;
     margin-right:auto;
-    height: 300px;
-    width:500px;
-    padding-bottom: 100px;
+    height: 50vw;
+    width: 80vw;
+    padding-bottom: 50px;
 }
 
 /*design du boutton start page tuto*/
@@ -143,29 +145,27 @@ ul li {
 
 #team {
   text-align: center;
-  font-family: 'Indie Flower';
   font-size: 80px;
   margin: 0px;
-  color: #DC2F02; 
 }
 
 /*style Grid page équipe*/
 .prenom {
-  font-family: 'Indie Flower';
   font-size: 40px;
-  color: #370617;
+  color: white;
   margin: 2px;
 }
 
 .container {
+  
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 2rem;
+  
 }
 
 .Presentation-personne {
   text-align: center;
-  background:rgb(167, 150, 150);
   border-radius: 20px;
 }
 
@@ -190,7 +190,7 @@ ul li {
     bottom:0;
     left:0;
     width:100%;
-    height:12vh;
+    height:10vh;
 
     display: flex;
     justify-content: space-around;
