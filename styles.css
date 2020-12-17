@@ -242,27 +242,30 @@ ul li {
 
 /*style Grid page équipe*/
 .prenom {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   margin: 2px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  
-}
-
-.Presentation-personne {
   text-align: center;
+  padding: 20px; 
+}
+
+section#container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Player {
   border-radius: 20px;
+  box-shadow: 0 0 5px rgb(151, 151, 151);
+  width: 480px;
+  margin-bottom: 15px;
 }
 
 /* Style images équipe */
 .potato {
-  width: 300px;
-  height: 200px;
+  width: 480px;
+  height: 300px;
   border-radius: 20px;
 }
 
