@@ -6,18 +6,64 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>About</title>
-</head>
-<body>
-    <h1>À propos de Play Again</h1>
-    <p>Notre objectif est de faire/refaire découvrir différents styles de musiques aux jeunes enfants à travers des minis jeux ludiques. <br>
-        Ici nous nous concentrons sur la musique Rock. C’est un genre musical apparu dans les années 1950 aux États-Unis. <br>
-        Les instruments qui le caractérise sont : la guitare électrique, la guitare basse, la batterie, le synthétiseurs, etc.<br>
-        <br>
-        Quant à l’éveil musical, il permet d'exercer la mémoire, l'attention et la créativité des enfants. <br>
-        C’est un élément essentiel à leur développement cognitif.<br>
-        Bien sûr c'est bien plus efficace lorsque c’est amusant !<br>
-        <br>
-        La musique à de nombreux bienfaits, elle n’est pas bénéfiques uniquement pour les enfants. <br>
-        En fonction des écoutes, elle permet de réconforter, apaiser, aider à mieux apprendre et agit sur les humeurs.</p>
-</body>
+  </head>
+  <body>
+    <main>
+      <h1>À propos de Play Again</h1>
+      <p>
+        Notre objectif est de faire/refaire découvrir différents styles de
+        musiques aux jeunes enfants à travers des minis jeux ludiques. <br />
+        Ici nous nous concentrons sur la musique Rock. C’est un genre musical
+        apparu dans les années 1950 aux États-Unis. <br />
+        Les instruments qui le caractérise sont : la guitare électrique, la
+        guitare basse, la batterie, le synthétiseurs, etc.<br />
+        <br />
+        Quant à l’éveil musical, il permet d'exercer la mémoire, l'attention et
+        la créativité des enfants. <br />
+        C’est un élément essentiel à leur développement cognitif.<br />
+        Bien sûr c'est bien plus efficace lorsque c’est amusant !<br />
+        <br />
+        La musique à de nombreux bienfaits, elle n’est pas bénéfiques uniquement
+        pour les enfants. <br />
+        En fonction des écoutes, elle permet de réconforter, apaiser, aider à
+        mieux apprendre et agit sur les humeurs.
+      </p>
+    </main>
+    <nav class="navbar">
+      <ul id="navbar_list" class="nav_display_none">
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="tuto.html">Tutoriel</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="gallery">Gallerie</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="team.html">Equipe</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="about.html">À propos</a>
+        </li>
+      </ul>
+      <div class="nav_main">
+        <div class="navbar_element">
+          <a href="index.html"
+            ><img class="nav_svg" src="svg/house.svg" alt="house"
+          /></a>
+        </div>
+        <div class="navbar_element">
+          <a href="game.html"
+            ><img class="nav_svg" src="svg/gamepad.svg" alt="gamepad"
+          /></a>
+        </div>
+        <div
+          class="navbar_element"
+          id="navbar_element_help"
+          onclick="openCloseMenu()"
+        >
+          <img class="nav_svg" src="svg/help.svg" alt="help" />
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script src="navbar.js"></script>
 </html>
