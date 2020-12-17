@@ -11,6 +11,8 @@ https://www.flaticon.com/packs/music-store-49?word=musical%20instrument
     grid-template-columns: repeat(3, 1fr);
     max-width: 400px;
     margin: 5vh 0;
+    grid-gap: .25rem;
+    transition: grid-gap .4s ease-in-out;
 }
 
 
@@ -26,51 +28,28 @@ body {
 
 
 div.case {
-    border:3px solid white;
-    padding: 3rem ;
-    background-position: center;
-    background-size: 50%;
+    
+    padding: 1rem ;
     background-color: rgb(231, 231, 231);
+    border-radius: 4px;
     transition: border .3s ease-in-out;
 }
 
-.case:hover {
-    border-color: #E85D04;
+.case:active {
+    border:1px solid #E85D04;
     cursor: grab;
 }
 
-.box1 {
-    background:url('img/case_1-guitar.svg') no-repeat;
+
+.case img {
+    width: 100%;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
 }
 
-.box2 {
-    background:url('img/case_2-harp.svg') no-repeat;
-}
-
-.box3 {
-    background:url('img/case_3-microphone.svg') no-repeat;
-}
-
-.box4 {
-    background:url('img/case_4-xylo.svg') no-repeat;
-}
-
-.box5 {
-    background:url('img/case_5-drum.svg') no-repeat;
-}
-
-.box6 {
-    background:url('img/case_6-violon.svg') no-repeat;
-}
-
-.box7 {
-    background:url('img/case_7-saxo.svg') no-repeat;
-}
-
-.box8 {
-    background:url('img/case_8-horn.svg') no-repeat;
-}
-.box9 {
-    background:url('img/case_9-maraca.svg') no-repeat;
+.case:active img{
+    border-color: #E85D04;
+    cursor: grab;
+    opacity: 1;
 }
 

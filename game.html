@@ -5,70 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="game.css" />
     <title>Jeux sauve le Rock</title>
-  </head>
-  <body>
+</head>
+<body>
+    <header></header>
     <main>
-      <h1>SAUVE LE ROCK!!!!</h1>
-      <h2>Mission 1 : Découvre les instruments du rock.</h2>
-      <h3>Soit attentif en écoutant le son qui va suivre</h3>
+    <h1>SAUVE LE ROCK!!!!</h1>
+    <h2>Mission 1 : Découvre les instruments du rock.</h2>
+    <h3>Soit attentif en écoutant les sons qui vont suivre</h3>
 
-      <audio controls="">
-        <source
-          src="sound/basement-drum-break_140bpm.ogg"
-          type="audio/ogg; codecs=vorbis"
-        />
-        Your browser does not support the audio element.
-      </audio>
 
-      <div id="memorie_rock">
-        <div class="case box1"></div>
-        <div class="case box2"></div>
-        <div class="case box3"></div>
-        <div class="case box4"></div>
-        <div class="case box5"></div>
-        <div class="case box6"></div>
-        <div class="case box7"></div>
-        <div class="case box8"></div>
-        <div class="case box9"></div>
+<div id="memorie_rock">
+        <div class="case box1">
+            <img src="img/case_1-guitar.svg" alt="guitar">
+        </div>
+        <div class="case box2">
+            <img src="img/case_2-harp.svg" alt="harp">
+        </div>
+        <div class="case box3">
+            <img src="img/case_3-microphone.svg" alt="micro">
+        </div>
+        <div class="case box4">
+            <img src="img/case_4-xylo.svg" alt="xylo">
+        </div>
+        <div class="case box5">
+            <img src="img/case_5-drum.svg" alt="drum">
+        </div>
+        <div class="case box6">
+            <img src="img/case_6-violon.svg" alt="violon">
+        </div>
+        <div class="case box7">
+            <img src="img/case_7-saxo.svg" alt="saxo">
+        </div>
+        <div class="case box8">
+            <img src="img/case_8-horn.svg" alt="horn">
+        </div>
+        <div class="case box9">
+            <img src="img/case_9-maraca.svg" alt="maraca">
+        </div>
+    </div>    
+</main>
+
+<nav class="navbar">
+    <ul id="navbar_list" class="nav_display_none">
+      <li class="navbar_list_element">
+        <a class="navbar_list_link" href="tuto.html">Tutoriel</a>
+      </li>
+      <li class="navbar_list_element">
+        <a class="navbar_list_link" href="gallery">Gallerie</a>
+      </li>
+      <li class="navbar_list_element">
+        <a class="navbar_list_link" href="team.html">Equipe</a>
+      </li>
+      <li class="navbar_list_element">
+        <a class="navbar_list_link" href="about.html">À propos</a>
+      </li>
+    </ul>
+    <div class="nav_main">
+      <div class="navbar_element">
+        <a href="index.html"
+          ><img class="nav_svg" src="svg/house.svg" alt="house"
+        /></a>
       </div>
-    </main>
-    <nav class="navbar">
-      <ul id="navbar_list" class="nav_display_none">
-        <li class="navbar_list_element">
-          <a class="navbar_list_link" href="tuto.html">Tutoriel</a>
-        </li>
-        <li class="navbar_list_element">
-          <a class="navbar_list_link" href="gallery">Gallerie</a>
-        </li>
-        <li class="navbar_list_element">
-          <a class="navbar_list_link" href="team.html">Equipe</a>
-        </li>
-        <li class="navbar_list_element">
-          <a class="navbar_list_link" href="about.html">À propos</a>
-        </li>
-      </ul>
-      <div class="nav_main">
-        <div class="navbar_element">
-          <a href="index.html"
-            ><img class="nav_svg" src="svg/house.svg" alt="house"
-          /></a>
-        </div>
-        <div class="navbar_element">
-          <a href="game.html"
-            ><img class="nav_svg" src="svg/gamepad.svg" alt="gamepad"
-          /></a>
-        </div>
-        <div
-          class="navbar_element"
-          id="navbar_element_help"
-          onclick="openCloseMenu()"
-        >
-          <img class="nav_svg" src="svg/help.svg" alt="help" />
-        </div>
+      <div class="navbar_element">
+        <a href="game.html"
+          ><img class="nav_svg" src="svg/gamepad.svg" alt="gamepad"
+        /></a>
       </div>
-    </nav>
+      <div
+        class="navbar_element"
+        id="navbar_element_help"
+        onclick="openCloseMenu()"
+      >
+        <img class="nav_svg" src="svg/help.svg" alt="help" />
+      </div>
+    </div>
+  </nav>
   </body>
   <script src="navbar.js"></script>
 </html>
