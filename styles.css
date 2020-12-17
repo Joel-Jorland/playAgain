@@ -124,8 +124,6 @@ audio{
         flex-wrap: wrap;
         justify-content: space-around;
         width:100vw;
-        flex-flow: ;
-        
     }  
     .inGallery{
         width:80vw;
@@ -186,23 +184,35 @@ ul li {
 
 /* navbar */
 .navbar {
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:12vh;
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items:center;
-    border: 1px solid rgb(151, 151, 151);
-    box-shadow: 0 0 5px rgb(151, 151, 151);
-    background-color:#F48C06;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgb(151, 151, 151);
+  box-shadow: 0 0 5px rgb(151, 151, 151);
 }
 .navbar_element {
-    margin: 10px;
+  margin: 10px;
 }
 .nav_svg {
-    height:10vh;
+  height: 10vh;
+}
+
+#login_div {
+  padding: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
