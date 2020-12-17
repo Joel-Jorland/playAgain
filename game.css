@@ -35,7 +35,7 @@ div.case {
     transition: border .3s ease-in-out;
 }
 
-.case:hover {
+.case:active {
     border:1px solid #E85D04;
     cursor: grab;
 }
@@ -47,7 +47,7 @@ div.case {
     transition: opacity .4s ease-in-out;
 }
 
-.case:hover img{
+.case:active img{
     border-color: #E85D04;
     cursor: grab;
     opacity: 1;
