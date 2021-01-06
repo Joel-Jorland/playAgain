@@ -5,20 +5,28 @@ let firstCard , secondCard;
 let lockBoard = false;
 
 function flipCard(){ 
-    if (lockBoard) return
-    if (this === firstCard) return
+    if (lockBoard) return // empeche de cliquer a nouveau quand deux cartes sont deja retournees
+    if (this === firstCard) return // empeche de cliquer deux fois sur la meme carte
+        
+    let audio = this.getElementsByClassName('sound')[0]
+    audio.duration = 1
+    audio.play() // joue un song au moment de retourner la carte
+        setTimeout(() => {
+            audio.pause()
+        }, 2000);
 
-    this.classList.toggle('flip');
-    if (!hasFlippedCard) {
-        hasFlippedCard = true;
+        this.classList.toggle('flip'); // retourne la carte
+
+    if (!hasFlippedCard) { // si on n'a pas deja retourne une carte
+        hasFlippedCard = true; 
         firstCard = this;
 
         return
 
-    } //else
+    } // sinon si on a deja retourne une carte 
     
     secondCard = this;
-    checkForMatch()
+    checkForMatch() //on va pouvoir comparer les deux cartes
 
 }
 
@@ -43,8 +51,7 @@ function unflipCards(){
         secondCard.classList.remove('flip');
         
         resetBoard();
-
-        },1500);
+     },1500);
 }
 
 function resetBoard(){
@@ -57,6 +64,12 @@ function resetBoard(){
         let randomPos = Math.floor(Math.random() * 8);
         card.style.order = randomPos;
     });
-})(); //  = appeler la fonction
+})(); //  = appeler la fonction\
 
 cards.forEach(card => card.addEventListener('click', flipCard))
+
+// fonction song au au click de chaque carte
+// cards.forEach(card => card.addEventListener('click', playSong (){
+//     song.play()
+// }))
+
