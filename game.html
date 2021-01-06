@@ -12,49 +12,58 @@
     <title>Jeux sauve le Rock</title>
   </head>
   <body>
-    <header><img id="logo" src="pictures/Logo.png" alt="Logo playAgain"></header>
+    <header>
+      <img id="logo" src="pictures/Logo.png" alt="Logo playAgain" />
+    </header>
     <main>
       <h1>SAUVE LE ROCK!!!!</h1>
       <h2>Mission 1 : Découvre les instruments du rock.</h2>
       <h3>Soit attentif en écoutant les sons qui vont suivre</h3>
+      <h3 id="score">Score : 0</h3>
+      <h3 id="timer">0 secondes</h3>
 
       <section class="memory-game">
-
         <div class="memory-card" data-instru="guitar">
-            <img class='front-face' src="img/case_1-guitar.svg" alt="guitar" />
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+          <img class="front-face" src="img/case_1-guitar.svg" alt="guitar" />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
         </div>
-        <div class="memory-card"  data-instru="guitar">
-            <img class='front-face' src="img/case_1-guitar.svg" alt="guitar"/>
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
-        </div>
-        <div class="memory-card"  data-instru="harp">
-            <img class='front-face' src="img/case_2-harp.svg" alt="harp"/>
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        <div class="memory-card" data-instru="guitar">
+          <img class="front-face" src="img/case_1-guitar.svg" alt="guitar" />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
         </div>
         <div class="memory-card" data-instru="harp">
-            <img class='front-face' src="img/case_2-harp.svg" alt="harp"/>
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+          <img class="front-face" src="img/case_2-harp.svg" alt="harp" />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
+        </div>
+        <div class="memory-card" data-instru="harp">
+          <img class="front-face" src="img/case_2-harp.svg" alt="harp" />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
         </div>
         <div class="memory-card" data-instru="microphone">
-            <img class='front-face' src="img/case_3-microphone.svg" alt="microphone"/>
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+          <img
+            class="front-face"
+            src="img/case_3-microphone.svg"
+            alt="microphone"
+          />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
         </div>
         <div class="memory-card" data-instru="microphone">
-            <img class='front-face' src="img/case_3-microphone.svg" alt="microphone"/>
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+          <img
+            class="front-face"
+            src="img/case_3-microphone.svg"
+            alt="microphone"
+          />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
         </div>
         <div class="memory-card" data-instru="xylo">
-            <img class='front-face' src="img/case_4-xylo.svg" alt="xylo"/>
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+          <img class="front-face" src="img/case_4-xylo.svg" alt="xylo" />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
         </div>
         <div class="memory-card" data-instru="xylo">
-            <img class='front-face' src="img/case_4-xylo.svg" alt="xylo"/>
-            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+          <img class="front-face" src="img/case_4-xylo.svg" alt="xylo" />
+          <img class="back-face" src="pictures/backCard.png" alt="logo" />
         </div>
-    
-    </section>
-
+      </section>
     </main>
 
     <nav class="navbar">
@@ -93,6 +102,6 @@
       </div>
     </nav>
   </body>
-  <script src="memory.js"> </script>
+  <script src="memory.js"></script>
   <script src="navbar.js"></script>
 </html>
