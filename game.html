@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="memory.css" />
     <title>Jeux sauve le Rock</title>
   </head>
   <body>
@@ -17,35 +18,43 @@
       <h2>Mission 1 : Découvre les instruments du rock.</h2>
       <h3>Soit attentif en écoutant les sons qui vont suivre</h3>
 
-      <div id="memorie_rock">
-        <div class="case box1">
-          <img src="img/case_1-guitar.svg" alt="guitar" />
+      <section class="memory-game">
+
+        <div class="memory-card" data-instru="guitar">
+            <img class='front-face' src="img/case_1-guitar.svg" alt="guitar" />
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box2">
-          <img src="img/case_2-harp.svg" alt="harp" />
+        <div class="memory-card"  data-instru="guitar">
+            <img class='front-face' src="img/case_1-guitar.svg" alt="guitar"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box3">
-          <img src="img/case_3-microphone.svg" alt="micro" />
+        <div class="memory-card"  data-instru="harp">
+            <img class='front-face' src="img/case_2-harp.svg" alt="harp"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box4">
-          <img src="img/case_4-xylo.svg" alt="xylo" />
+        <div class="memory-card" data-instru="harp">
+            <img class='front-face' src="img/case_2-harp.svg" alt="harp"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box5">
-          <img src="img/case_5-drum.svg" alt="drum" />
+        <div class="memory-card" data-instru="microphone">
+            <img class='front-face' src="img/case_3-microphone.svg" alt="microphone"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box6">
-          <img src="img/case_6-violon.svg" alt="violon" />
+        <div class="memory-card" data-instru="microphone">
+            <img class='front-face' src="img/case_3-microphone.svg" alt="microphone"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box7">
-          <img src="img/case_7-saxo.svg" alt="saxo" />
+        <div class="memory-card" data-instru="xylo">
+            <img class='front-face' src="img/case_4-xylo.svg" alt="xylo"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box8">
-          <img src="img/case_8-horn.svg" alt="horn" />
+        <div class="memory-card" data-instru="xylo">
+            <img class='front-face' src="img/case_4-xylo.svg" alt="xylo"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-        <div class="case box9">
-          <img src="img/case_9-maraca.svg" alt="maraca" />
-        </div>
-      </div>
+    
+    </section>
+
     </main>
 
     <nav class="navbar">
@@ -84,5 +93,6 @@
       </div>
     </nav>
   </body>
+  <script src="memory.js"> </script>
   <script src="navbar.js"></script>
 </html>
