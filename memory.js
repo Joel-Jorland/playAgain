@@ -76,3 +76,11 @@ function resetBoard() {
 let time = setInterval(timer, 1000)
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
+
+
+function reset() {
+  if (cardsDone === cards.length) {
+    window.location.reload();
+  }
+  
+}
