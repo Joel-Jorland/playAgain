@@ -48,11 +48,11 @@ function disableCards() {
 
 function unflipCards() {
   lockBoard = true;
+  score --;
+  printScore();
   setTimeout(() => {
     firstCard.classList.remove("flip");
     secondCard.classList.remove("flip");
-    score--;
-    printScore();
     resetBoard();
   }, 1500);
 }
@@ -70,15 +70,6 @@ function timer() {
     clearInterval(time); // if we found all cards, stop the timer
     document.getElementsByClassName('win')[0].style.display = 'block';
   }
-}
-function unflipCards() {
-  lockBoard = true;
-  setTimeout(() => {
-    firstCard.classList.remove("flip");
-    secondCard.classList.remove("flip");
-
-    resetBoard();
-  }, 1500);
 }
 
 function resetBoard() {
