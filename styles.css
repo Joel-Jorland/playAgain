@@ -129,6 +129,12 @@ table {
 }
 /* end of reset styles CSS */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*css fond d'écran*/
 body{
     background: radial-gradient(#03071E 70%, #370617, #6A040F, #9D0208, #D00000, #DC2F02, #E85D04, #F48C06);
@@ -139,25 +145,36 @@ body{
   background-attachment: fixed;
   height:100vh;
 }
+
+
+header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
 main{
-    padding-bottom: 14vh;
+    padding-bottom: 20vh;
 }
 /* style pour les titres*/
 h1 {
     font-size: 60px;
-    color:#FFBA08;
-    text-shadow: 5px 5px 3px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
+    color:#fdbf85;
     text-align: center;
-    padding: 50px;
+    padding: 20px 20px;
     font-family: 'Indie Flower', cursive;
+    
 }
-
+h2 {
+  text-align: center;
+}
 h2, h3{
-  font-size: 30px;
-    color: white;
-    text-shadow: 5px 5px 3px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
-    padding: 10px;
-    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.383);
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
 }
 h3 {
   font-size: 20px;
@@ -165,12 +182,14 @@ h3 {
 
 /*style de paragraphe*/
 p {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1.4em;
+    font-weight: 100;
+    text-align: justify;
     color:white;
     text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
-    text-align: center;
     padding: 20px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 /*mise en page img page tuto*/
@@ -230,13 +249,14 @@ audio {
 
 /* style pour page équipe */
 .prenom {
-  font-size: 29px;
+  font-size: 32px;
+  letter-spacing: .1em;
+  font-family:'Indie Flower', cursive;
   color: #f2f2f2;
   margin: 2px;
   text-align: right;
   padding: 15px 14px;
   font-weight: 100;
-  font-family: sans-serif;
   margin-top: -63px;
   margin-bottom: 20px;
   position: relative;
@@ -324,12 +344,11 @@ div.case {
   bottom: 0;
   left: 0;
   width: 100%;
-  border: 1px solid rgb(151, 151, 151);
-  box-shadow: 0 0 5px rgb(151, 151, 151);
-  background-color: #f48c06;
+  background-color: #d65c0c;
+  padding:20px;
 }
 .nav_main {
-  height: 12vh;
+  height: 10vh;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -343,7 +362,10 @@ div.case {
   cursor: pointer;
 }
 .nav_svg {
-  height: 10vh;
+  height: 80px;
+  background: #ffe2ad;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #login_div {
@@ -374,7 +396,7 @@ div.case {
 }
 .navbar_list_link:link,
 .navbar_list_link:visited {
-  color: #03071e;
+  color: #f8cba1;
 }
 
 .nav_display_none {
