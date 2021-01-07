@@ -137,13 +137,8 @@ table {
 
 /*css fond d'écran*/
 body{
-    background: radial-gradient(#03071E 70%, #370617, #6A040F, #9D0208, #D00000, #DC2F02, #E85D04, #F48C06);
-    font-family: 'Indie Flower', cursive;
-    background: #F48C06; /* fallback for old browsers /
-  background: -webkit-linear-gradient(to bottom, #9D0208, #F48C06); / Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #9D0208, #F48C06); 
-  background-attachment: fixed;
-  height:100vh;
+  background-image: url("pictures/fond.jpeg");
+  font-family: 'Indie Flower', cursive;
 }
 
 
@@ -159,7 +154,7 @@ main{
 /* style pour les titres*/
 h1 {
     font-size: 60px;
-    color:#fdbf85;
+    color: black;
     text-align: center;
     padding: 20px 20px;
     font-family: 'Indie Flower', cursive;
@@ -170,7 +165,7 @@ h2 {
 }
 h2, h3{
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: black;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.383);
     padding: 5px;
     font-family: 'Lato', sans-serif;
@@ -186,7 +181,7 @@ p {
     line-height: 1.4em;
     font-weight: 100;
     text-align: justify;
-    color:white;
+    color:black;
     text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
     padding: 20px;
     font-family: 'Lato', sans-serif;
