@@ -69,6 +69,11 @@ function timer() {
   if (cardsDone === cards.length) {
     clearInterval(time); // if we found all cards, stop the timer
     document.getElementsByClassName('win')[0].style.display = 'block';
+    timerElem.classList.add('bravo');
+    timerElem.innerHTML = `
+    Bravo tu as trouvé les instruments du ROCK
+    en ${timeSpent} secondes !!! `;
+    
   }
 }
 

@@ -2,6 +2,11 @@ body {
   height: 100vh;
 }
 
+
+main.game {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .memory-game {
   width: 640px;
   height: 60vh;
@@ -51,13 +56,40 @@ img.memory-card {
   background: white;
   border-radius: 5px;
   backface-visibility: hidden;
+  transition: border .2S;
 }
+
+.front-face:active {
+  border: 2px solid white;
+}
+
+
+
 .front-face {
   transform: rotateY(180deg);
 }
 
 .win {
   display: none;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(.2);
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+.bravo {
+  animation-name:slideIn;
+  animation-duration:.5s;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /* Gallery for mobile */

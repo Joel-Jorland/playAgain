@@ -15,12 +15,15 @@
     <header>
       <img id="logo" src="pictures/Logo.png" alt="Logo playAgain" />
     </header>
-    <main>
+    <main class="game">
       <h1>SAUVE LE ROCK!!!!</h1>
       <h2>Mission 1 : Découvre les instruments du rock</h2>
       <h3>Sois attentif en écoutant les sons qui vont suivre.</h3>
       <h3 id="score">Score : 0</h3>
       <h3 id="timer">Temps écoulé : 0 secondes</h3>
+      <div class="win">
+        <button id="play-again" onclick="reset()">Play Again</button>
+        </div>
 
       <section class="memory-game">
 
@@ -64,10 +67,35 @@
             <img class='front-face' src="img/case_7-saxo.svg" alt="saxo"/>
             <img class='back-face' src="pictures/backCard.png" alt="logo"/>
         </div>
-      </section>
-      <div class="win">
-      <button id="play-again" onclick="reset()">Play Again</button>
+
+        <div class="memory-card" data-instru="violon">
+          <audio class = "sound" src="sound/violon.mp3"></audio>
+          <img class='front-face' src="img/case_6-violon.svg" alt="violon"/>
+          <img class='back-face' src="pictures/backCard.png" alt="logo"/>
       </div>
+
+      <div class="memory-card" data-instru="violon">
+        <audio class = "sound" src="sound/violon.mp3"></audio>
+        <img class='front-face' src="img/case_6-violon.svg" alt="violon"/>
+        <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+    </div>
+
+
+
+    <div class="memory-card" data-instru="horn">
+      <audio class = "sound" src="sound/french_horn.mp3"></audio>
+      <img class='front-face' src="img/case_8-horn.svg" alt="horn"/>
+      <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+  </div>
+  
+  <div class="memory-card" data-instru="horn">
+    <audio class = "sound" src="sound/french_horn.mp3"></audio>
+    <img class='front-face' src="img/case_8-horn.svg" alt="horn"/>
+    <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+</div>
+
+
+      </section>
     </main>
 
     <nav class="navbar">
