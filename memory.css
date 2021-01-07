@@ -47,6 +47,9 @@ img.memory-card {width: 100px;}
     transform: rotateY(180deg);
 }
 
+.win{
+    display:none;
+}
 
 /* Gallery for mobile */
 @media screen and (max-width:640px){

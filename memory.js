@@ -66,7 +66,10 @@ function timer() {
   let timerElem = document.getElementById("timer");
   timerElem.innerHTML = `Temps écoulé : ${timeSpent} secondes`;
 
-  if (cardsDone === cards.length) clearInterval(time); // if we found all cards, stop the timer
+  if (cardsDone === cards.length) {
+    clearInterval(time); // if we found all cards, stop the timer
+    document.getElementsByClassName('win')[0].style.display = 'block';
+  }
 }
 function unflipCards() {
   lockBoard = true;
