@@ -275,7 +275,7 @@ section#container {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  opacity: 73%;
+  opacity: 100%;
   position: relative;
   z-index: 0;
   filter: drop-shadow(2px 4px 6px black);

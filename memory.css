@@ -5,8 +5,8 @@ body {
 }
 
 .memory-game {
-    /* width: 640px; */
-    /* height: 60vh; */
+    width: 640px;
+    height: 60vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
