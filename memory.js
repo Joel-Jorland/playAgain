@@ -72,7 +72,7 @@ function timer() {
     timerElem.classList.add('bravo');
     timerElem.innerHTML = `
     Bravo tu as trouvé les instruments du ROCK
-    en <b>${timeSpent} secondes !!!</b> `;
+    en ${timeSpent} secondes !!! `;
     
   }
 }
