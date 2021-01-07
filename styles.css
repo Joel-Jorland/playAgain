@@ -166,7 +166,7 @@ h2 {
 h2, h3{
     font-size: 25px;
     color: black;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.383);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.383);
     padding: 5px;
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
@@ -182,7 +182,7 @@ p {
     font-weight: 100;
     text-align: justify;
     color:black;
-    text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #370617;
+    text-shadow: 1px 1px 2px #E85D04, 0 0 1em #9D0208, 0 0 0.2em #000000;
     padding: 20px;
     font-family: 'Lato', sans-serif;
 }
@@ -207,11 +207,17 @@ button {
   font-size: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding:5px;
+}
+button:hover{
+  cursor: pointer;
 }
 audio {
   display: none;
 }
-
+a {
+  text-decoration:none;
+}
 /* styles for Gallery */
 
 .gallery {
@@ -366,15 +372,23 @@ div.case {
 #login_div {
   padding: 20px;
 }
-
+label{
+  font-size: 20px;
+  line-height: 1.4em;
+  font-weight: 100;
+  text-align: justify;
+  color:black;
+  font-family: 'Lato', sans-serif;
+}
 .input {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
   box-sizing: border-box;
+  box-shadow: 2px 2px 5px black;
 }
 
 #navbar_list {
@@ -392,6 +406,8 @@ div.case {
 .navbar_list_link:link,
 .navbar_list_link:visited {
   color: #f8cba1;
+  text-decoration:underline;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.383);
 }
 
 .nav_display_none {
